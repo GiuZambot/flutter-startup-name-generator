@@ -90,12 +90,14 @@
               loadMainDartJs();
             }
           }, 4000);
+          document.querySelector('.carregando').remove();
         });
       } else {
         // Service workers not supported. Just drop the <script> tag.
         loadMainDartJs();
       }
     </script>
+    <h1 class="carregando">Carregando...</h1>
   </body>
 
 </html>
